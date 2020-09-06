@@ -15,8 +15,8 @@
     </ul>
 </nav>
 
-<section >
-    <h2 id="Tigers">Tigers</h2>
+<section id="Tigers">
+    <h2>Tigers</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque fuga, repellendus vitae, sit voluptatibus ad harum rerum dolores illo nulla nisi natus ipsa a inventore explicabo dolor id, voluptatem aliquam.</p>
 </section>
 
@@ -25,7 +25,7 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda distinctio saepe maiores, odio accusantium ex repellat amet iure eveniet. Minus labore odit unde natus modi deserunt laborum animi necessitatibus! Cupiditate.</p>
 </section>
 
-<section id="monkeys">
+<section id="Monkeys">
     <h2>Monkeys</h2>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsum earum exercitationem sequi culpa quos quas! Iste itaque quibusdam hic beatae harum, neque corporis quo adipisci consectetur dolore porro explicabo!</p>
 </section>
@@ -36,17 +36,11 @@
 </section>
 
 
-<!-- <section class="Hippopotamus">
-    <h2>Hippopotamus</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis excepturi assumenda reprehenderit cumque, praesentium aut pariatur, dicta, minus rerum fugiat maiores esse. Odio perspiciatis, amet architecto blanditiis commodi enim praesentium.</p>
-</section> -->
 <header><img src="image/tlogo.jpg" alt="Techgrounds"></header>
 
-<!-- <img src="https://techgrounds.nl/static/media/TG_Logo.d5934b2d.png" alt="logo techrounds"> -->
-
-<!-- <audio controls autoplay><source src="explosie.mp3.mp3" type="audio/mpeg"></audio> -->
-
-    <audio controls src="audio/explosie.mp3.mp3"></audio>
+    <audio controls loop>
+      <source src="audio/explosie.mp3.mp3">
+    </audio>
 
 <body>
    
@@ -106,21 +100,24 @@
  
 
     <form action ="/voorbeeld" method ="POST">
-        <label for="Achternaam">Achternaam:</label><input type="text" id="Achternaam" name="Achternaam"><br>
-        <label for="Voornaam">Voornaam:</label><input type="text" id="Voornaam" name="Voornaam">
-    </form><br><br>
+        <label for="Achternaam">Achternaam:</label>
+        <input type="text" id="Achternaam" name="Achternaam"><br>
+
+        <label for="Voornaam">Voornaam:</label>
+        <input type="text" id="Voornaam" name="Voornaam">
+    </form><br>
 
     <form action ="/voorbeeld" method ="POST">
-        <label for="email">Email:</label><input type="text" id="email" name="email">
-        <input type="Submit" value="submit">
-    </form><br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+    </form><br>
 
     <form action ="/voorbeeld" method ="POST">
+        <label for="male">Male</label>
         <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label><br>
+        <label for="female">Female</label>
         <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label><br>
-      </form><br>
+    </form><br>
 
     <form action ="/voorbeeld" method ="POST">
         <input type="checkbox" id="red" name="poss" value="red">
@@ -334,6 +331,8 @@
         </tr>
        
       </table>
+
+      <form action="/voorbeeld" method="POST" ></form>
 <!-- 
       <table>
         <tr>
