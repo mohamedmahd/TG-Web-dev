@@ -1,0 +1,64 @@
+<!-- Opdracht 8
+Styling die je toepast wordt toegepast in een bepaalde volgorde.
+Het kan voorkomen dat je styling toepast en vervolgens niet het gewenste resultaat ziet. Cascade en Inheritance zijn
+belangrijke concepten om te begrijpen hoe styling werkt. Lees hier in de officiële documentatie meer over cascade en
+inheritance.
+Zoek ook andere referenties om het concept te begrijpen.
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance
+
+Leg in eigen woorden uit wat met cascade en inheritance wordt bedoeld. Maak voorbeelden om je antwoord uit te leggen.
+
+Meer weten?
+Je kunt meer informatie vinden over deze concepten in deze video
+
+
+- Cascade gaat over de volgorde in de regels die worden toegpast. Bij tegenstrijdige regels
+  wordt de laatste regel gepakt en toegepast. (in dit geval maakt de volgorde uit)
+
+
+- Specificaty gaat over de specificering van de opdracht. Hoe nauwkeuriger en specifieker de opdracht 
+hoe eerder deze wordt geimplementeerd in het html document. (in dit geval maakt de volgorde niet uit)
+
+
+- Inheritance gaat over de dingen die elementen binnen een blokelement overnemen van de "parent" block element.
+Sommige proporties worden wel overgenomen en sommige niet.
+Width, maregin, padding and border worden niet overgenomen door de parent.
+Er zijn 3 manieren om inheritance te beinvloeden:
+                -inherit: Hiermee kun je de proporties van de parent overnemen.
+                -initial: Hiermee reset je de proporties terug naar de originele proporties van het element.
+                -unset: Hiermee reset je de proporties terug naar de originele proporties van het element.
+
+
+                body {
+                    color: red;
+                }
+                          
+                .my-class-1 a {
+                    color: inherit;
+                }
+                          
+                .my-class-2 a {
+                    color: initial;
+                }
+                          
+                .my-class-3 a {
+                    color: unset;
+                }
+
+                <ul>
+                    <li>Default <a href="#">link</a> color</li> blauw
+                    <li class="my-class-1">Inherit the <a href="#">link</a> color</li> rood
+                    <li class="my-class-2">Reset the <a href="#">link</a> color</li> zwart
+                    <li class="my-class-3">Unset the <a href="#">link</a> color</li> rood
+                </ul>
+
+
+Met de all functie kun je het hele block resetten naar: initial, inherit en unset:
+
+Voorbeeld met all ook niet duidelijk
+
+
+
+
+        note: Je geeft eerst aan hoe je een block wilt stylen.
+        Velvolgens geef je aan wat je anders per onderdeel. CSS overschrijft alleen de regels die herschreven worden. -->

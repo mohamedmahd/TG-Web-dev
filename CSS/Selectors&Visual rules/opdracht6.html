@@ -1,0 +1,67 @@
+<!-- Opdracht 6
+Verder heb je ook nog de volgende selectors:
+    • child selectors
+    • adjacent selectors
+    • general selectors
+
+Maak in een aparte html bestand voor elke selector een voorbeeld en maak een link in je antwoord naar dat html bestand. 
+Geef in je antwoord ook aan wat de voordelen zijn van elk selector. -->
+
+
+<!-- Child selector: -->
+<!-- De voordelen zijn dat je binnen een div niet meer hoeft om te kijken naar individuele elementen die gestyld moet worden -->
+
+<div>
+    <h2>Paragraph selecteors</h2>
+    <p>paragraph text</p>
+    <div><p>ingenesteld dus geen onderdeel van child selector</p></div>
+    <p>paragraph text2</p>
+</div>
+
+<style>
+    div > p {
+        background-color: green;
+        }
+</style>
+        
+        
+
+<!-- Adjacent selectors -->
+<!-- Voordeel is dat je een bepaalde opmaak nodig hebt na een bepaalde div. Dit kun je hiermee automatiseren. -->
+
+<div>
+    <h2>Paragraph selecteors</h2>
+    <p>paragraph text</p>
+    <p>paragraph text2</p>
+</div>
+
+<p>Dit is het eerstvolgend element na de div. Dus is het target van de adjacent selector</p>
+
+<style>
+div + p {
+  background-color:green;
+}
+</style>
+
+
+<!-- General selectors
+Voordeel hiervan is dat je alles wat na een bepaalde div in 1 keer kunt stylen -->
+
+<div>
+    <h2>Paragraph selecteors</h2>
+    <p>paragraph text</p>
+    <p>paragraph text2</p>
+</div>
+
+<p>Alle elementen die de div volgen worden op deze manier getyld door de general selector</p>
+<p>Alle elementen die de div volgen worden op deze manier getyld door de general selector</p>
+<p>Alle elementen die de div volgen worden op deze manier getyld door de general selector</p>
+<h3>Dit is geen p dus wordt niet opgenomen in de opmaak</h3>
+<p>Alle elementen die de div volgen worden op deze manier getyld door de general selector</p>
+<p>Alle elementen die de div volgen worden op deze manier getyld door de general selector</p>
+
+<style>
+    div ~ p {
+  background-color:green;
+}
+</style>
